@@ -1,6 +1,7 @@
 package de.flowpac.eta.adapter.meteo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.quarkus.runtime.annotations.RegisterForReflection;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,6 +14,7 @@ import lombok.ToString;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder
 @ToString
+@RegisterForReflection
 public class CurrentWeatherDto {
 
     @JsonProperty("temperature")
