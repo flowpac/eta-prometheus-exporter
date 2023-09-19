@@ -55,11 +55,6 @@
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.graalvm.nativeimage</groupId>
-            <artifactId>svm</artifactId>
-            <version>22.3.3</version>
-        </dependency>
         <!-- Test -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -135,9 +130,6 @@
             </activation>
             <properties>
                 <quarkus.package.type>native</quarkus.package.type>
-                <quarkus.native.additional-build-args>
-                    --allow-incomplete-classpath,--initialize-at-run-time=com.github.tomaslanger.chalk.Chalk
-                </quarkus.native.additional-build-args>
             </properties>
             <build>
                 <plugins>
