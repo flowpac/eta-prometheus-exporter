@@ -1,6 +1,6 @@
 # ETA Pellets Heating Prometheus Exporter
 
-A Prometheus exporter for *ETA Pellets Heating* metrics. Parses the XML response of the ETA API and transforms measures
+A Prometheus exporter for *[ETA Pellets Heating](https://www.eta.co.at/)* metrics. Parses the XML response of the ETA API and transforms measures
 into Prometheus metrics.
 
 # Build
@@ -10,6 +10,7 @@ into Prometheus metrics.
 ```
 
 # Quick Start
+You have to activate the [http://www.holzheizer-forum.de/attachment/28434-eta-restful-v1-1-pdf/](REST API).
 
 ```
 java -Dmeteo.latitude=46.7435 -Dmeteo.longitude=9.3355 -Deta.url=http://192.168.2.142:8080 -jar target/eta-prometheus-exporter-1.0-SNAPSHOT-runner.jar 
