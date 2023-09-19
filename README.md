@@ -10,7 +10,9 @@ into Prometheus metrics.
 ```
 
 # Quick Start
-You have to activate the [http://www.holzheizer-forum.de/attachment/28434-eta-restful-v1-1-pdf/](REST API).
+You have to activate the [Rest API](http://www.holzheizer-forum.de/attachment/28434-eta-restful-v1-1-pdf/).
+- Register your pellets unit at [https://www.meineta.at](www.meineta.at)
+- Activate the Rest API using the touch screen on your pellets unit
 
 ```
 java -Dmeteo.latitude=46.7435 -Dmeteo.longitude=9.3355 -Deta.url=http://192.168.2.142:8080 -jar target/eta-prometheus-exporter-1.0-SNAPSHOT-runner.jar 
