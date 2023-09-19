@@ -14,4 +14,11 @@ java -Dmeteo.latitude=48.2825 -Dmeteo.longitude=8.7067 -Deta.url=http://192.168.
   - meteo.latitude: Latitude Coordinates
   - meteo.longitude: Longitude Coordinates
 - ETA Heating
-  - eta.url: Base url of the ETA API (must be activated in advance). 
+  - eta.url: Base url of the ETA API (must be activated in advance).
+- HTTP Server Parameters
+  - [Quarkus](https://quarkus.io/guides/http-reference) HTTP Reference
+
+# Access Prometheus Metrics
+```
+e.g. curl http://localhost:8080/metrics
+```
